@@ -1,13 +1,43 @@
-ul li {
-    display: inline-block;
-    border: 1px solid;
-    border-color: #614359;
-    background-color: lavender;
-    width: 90px;
-    list-style-type: none;
-    padding: 12px 25px 12px 25px;
-    margin-top: 0;
-    margin-left: 20px;
-    text-decoration: underline;
+nav .main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .main-nav li {
+    position: relative;
     text-align: center;
-}
+  }
+  
+  .main-nav li a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    color: green;
+    background-color: pink;
+    text-decoration: none;
+  }
+  
+  /* Dropdown hidden */
+  .dropdown {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: plum;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .dropdown li {
+    text-align: center;
+    margin: 2px 0;
+  }
+  
+  /* Shows dropdown with hover */
+  nav .main-nav li:hover .dropdown {
+    display: block;
+  }
+  
