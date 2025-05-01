@@ -19,4 +19,59 @@
     background-color: #f9f9f9;
     width: 80%;
   }
-  
+
+  /* --------- Base Styles: Mobile First --------- */
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot-container img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+/* Text styles inside about-content */
+.about-content {
+  line-height: 1.6;
+}
+
+/* --------- Tablet (600px and up) --------- */
+@media (min-width: 600px) {
+  .about-grid {
+    padding: 40px;
+  }
+
+  .headshot-container img {
+    max-width: 300px;
+  }
+}
+
+/* --------- Desktop (900px and up) --------- */
+@media (min-width: 900px) {
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    align-items: start;
+  }
+
+  .about-content {
+    padding-right: 20px;
+  }
+
+  .headshot-container {
+    justify-content: flex-end;
+  }
+}
