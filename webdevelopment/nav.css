@@ -1,16 +1,19 @@
-nav .main-nav {
+/* Make nav horizontal */
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  nav .main-nav li {
+  /* Style top-level nav items */
+  nav li {
     position: relative;
     text-align: center;
   }
   
-  .main-nav li a {
+  /* Style links */
+  nav a {
     display: block;
     padding: 10px;
     margin: 10px;
@@ -19,10 +22,10 @@ nav .main-nav {
     text-decoration: none;
   }
   
-  /* Dropdown hidden */
-  .dropdown {
+  /* dropdown menu */
+  nav li ul {
     position: absolute;
-    top: 100%; 
+    top: 100%;  /* dropdown shows below parent */
     left: 0;
     background-color: plum;
     list-style: none;
@@ -31,13 +34,13 @@ nav .main-nav {
     display: none;
   }
   
-  .dropdown li {
-    text-align: center;
+  /* Style dropdown items */
+  nav li ul li {
     margin: 2px 0;
   }
   
-  /* Shows dropdown with hover */
-  nav .main-nav li:hover .dropdown {
+  /* Show dropdown on hover */
+  nav li:hover ul {
     display: block;
   }
   
