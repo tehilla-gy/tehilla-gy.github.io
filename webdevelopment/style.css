@@ -1,3 +1,7 @@
+body {
+  font-family: 'IBM Plex Serif', serif;
+}
+
 
 /* 
    Global Text Styles (Mobile First)
@@ -354,6 +358,82 @@ footer {
     }
   }
   
+/* ========== Snapshot Table Styles - Pink & Green ========== */
+.snapshot-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #cbf7d5; /* soft green border */
+  margin-top: 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(203, 247, 213, 0.4);
+}
 
+.snapshot-table th,
+.snapshot-table td {
+  border: 1px solid #eec5da;
+  padding: 12px;
+  text-align: left;
+}
 
+/* First and last row color: soft pink */
+.snapshot-table thead,
+.snapshot-table tfoot {
+  background-color: #fbe6f5;
+  color: #2d4739; /* a soft, deep green for contrast */
+  font-weight: bold;
+}
+
+/* Alternate row colors */
+.snapshot-table tbody tr:nth-child(odd) {
+  background-color: #fff8fc; /* light blush pink */
+}
+
+.snapshot-table tbody tr:nth-child(even) {
+  background-color: #f2fff6; /* pale mint green */
+}
+
+/* Caption styling */
+figcaption {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+  color: #2d4739;
+}
+
+/* Responsive table for mobile */
+@media screen and (max-width: 600px) {
+  .snapshot-table,
+  .snapshot-table thead,
+  .snapshot-table tbody,
+  .snapshot-table tfoot,
+  .snapshot-table th,
+  .snapshot-table td,
+  .snapshot-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .snapshot-table thead {
+    display: none;
+  }
+
+  .snapshot-table td {
+    padding-left: 50%;
+    position: relative;
+    text-align: right;
+  }
+
+  .snapshot-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    font-weight: bold;
+    text-align: left;
+    color: #2d4739;
+  }
+}
 
