@@ -257,3 +257,13 @@ h1 {
 }
 
 /* END OF PRINT */  
+
+/* FOOTER BACKGROUND */
+footer {
+  background-image: url("solid-pink.png");
+  background-size: cover;
+  background-position: center;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
