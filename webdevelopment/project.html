@@ -37,14 +37,16 @@ Tested:  Apr 25, 2025; Passed on Safari and Chrome browsers.
 </header>
 
 <nav>
-    <ul>
+    <span class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</span>
+
+    <ul id="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="project.html">Projects</a>
             <ul>
-                <li><a href="project.html">Internships</a></li>
-                <li><a href="project.html">Community Service</a></li>
-                <li><a href="project.html">Projects</a></li>
+                <li><a href="project.html#internship">Internships</a></li>
+                <li><a href="project.html#work-exp">Work Experience</a></li>
+                <li><a href="project.html#volunteer">Volunteer</a></li>
             </ul>
         </li>
         <li><a href="reflection.html">Reflection</a></li>
@@ -52,9 +54,103 @@ Tested:  Apr 25, 2025; Passed on Safari and Chrome browsers.
     </ul>
 </nav>
 
-
 <main>
+    <section class="project-section" id="internship">
 
+        <div class="media">
+            <video width="100%" controls>
+                <source src="civil-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+        </div>
+
+        <div class="text">
+            <h2>PROJECT MANAGEMENT INTERNSHIP</h2>
+            <p>
+                Over the summers of 2022 and 2023 I worked with Gilmor Engineering limited, a contractor working 
+                for the Federal Capital Development Authority in Abuja, the capital city of Nigeria. During my project 
+                management internship, I worked closely with engineers, contractors, and supervisors on various stages 
+                of highway construction projects. I gained hands-on experience in scheduling, budgeting, and on-site 
+                coordination. My responsibilities included reviewing project plans, assisting in tracking progress, and 
+                attending coordination meetings to ensure timely and cost-effective execution. I also contributed to 
+                quality control efforts by conducting field inspections and verifying that construction activities met 
+                design specifications and safety standards. This role gave me valuable exposure to the fast-paced and 
+                collaborative environment of construction management. I learned how to navigate challenges such as 
+                weather delays, subcontractor coordination, and material delivery timelines, all while maintaining 
+                effective communication across different stakeholders. My internship not only strengthened my 
+                technical skills but also enhanced my leadership, problem-solving, and organizational abilities—preparing 
+                me for future roles in civil engineering. 
+    
+            </p>
+    
+
+
+        </div>
+       
+
+    </section>
+
+    <section class="project-section" id="work-exp">
+
+        <div class="media">
+            <img src="peer-ment.png">
+
+
+        </div>
+
+        <div class="text">
+            <h2>ENGINEERING PEER MENTOR</h2>
+            <p>
+                As an engineering peer mentor, I supported first- and second-year engineering students by helping them 
+                transition into the academic and social environment of the engineering program. I served as a resource 
+                for course planning, study strategies, and navigating university life, drawing from my own experiences 
+                to provide guidance and encouragement. Through regular one-on-one check-ins and group mentoring sessions, 
+                I fostered a supportive space where students could ask questions, share concerns, and build confidence. I 
+                also collaborated with faculty and staff to organize academic workshops and community-building events, 
+                aiming to strengthen retention and engagement among underrepresented students in STEM. This role deepened 
+                my communication and leadership skills while reinforcing my own understanding of core engineering concepts. 
+                It was incredibly rewarding to witness the growth of my mentees and know that I played a part in their academic 
+                journeys. Mentoring taught me the value of empathy, patience, and the impact of peer support in engineering education.
+    
+            </p>
+
+
+        </div>
+       
+    </section>
+
+
+
+    <section class="project-section" id="volunteer">
+
+        <div class="media">
+            <img src="kids-day.jpg">
+
+
+        </div>
+
+        <div class="text">
+
+            <h2>ASCE KIDS DAY</h2>
+            <p>
+                I volunteered at the ASCE Kids Day event hosted by my school's chapter, which introduced 3rd to 6th grade 
+                students to various branches of civil engineering through fun, hands-on activities. The event featured rotating 
+                stations focused on structural, transportation, environmental, and geotechnical engineering. I was stationed in the 
+                transportation section, where I helped guide students through an interactive activity designed to teach them about 
+                traffic flow, road safety, and basic transportation planning concepts. We used miniature road layouts and toy cars to 
+                simulate different traffic scenarios, sparking conversations about signal timing, pedestrian safety, and congestion. 
+                It was rewarding to see the kids so curious and excited about engineering, and to help them connect real-world problems 
+                to simple solutions. Volunteering at this event strengthened my communication skills and reminded me how important 
+                outreach is for inspiring future engineers. It also reinforced my own passion for transportation engineering and STEM education.
+    
+            </p>
+    
+        </div>
+       
+    </section>
+
+ 
 
 </main>
 
@@ -69,6 +165,15 @@ Tested:  Apr 25, 2025; Passed on Safari and Chrome browsers.
 
     </p>
 </footer> 
+
+<!-- Mobile navigation toggle script -->
+<script>
+    function toggleMenu() {
+      const navList = document.getElementById("nav-list");
+      navList.classList.toggle("show");
+    }
+</script>
+
 </body>
 </html>
 

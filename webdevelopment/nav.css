@@ -48,7 +48,7 @@ nav ul {
 .mobile-menu-icon {
   display: none;
   font-size: 28px;
-  color: white;
+  color: pink;
   padding: 10px;
   cursor: pointer;
 }
@@ -72,8 +72,5 @@ nav ul {
     display: block;
   }
 
-  /* Hide dropdown list on mobile */
-  .dropdown {
-    display: none;
-  }
+  
 }

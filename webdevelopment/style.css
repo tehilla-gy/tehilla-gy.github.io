@@ -1,3 +1,41 @@
+
+/* 
+   Global Text Styles (Mobile First)
+ */
+   .text p {
+    font-size: 1rem; /* Base size on mobile (~16px) */
+    line-height: 1.6;
+  }
+  
+  /* 
+     Tablet Text Styles (min-width: 600px)
+      */
+  @media screen and (min-width: 600px) {
+    .text p {
+      font-size: 1.1rem; /* Slightly larger on tablets (~17.6px) */
+    }
+  
+    .text h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* 
+     Desktop Text Styles (min-width: 900px)
+     */
+  @media screen and (min-width: 900px) {
+    .text p {
+      font-size: 1.25rem; /* Bigger text for desktop (~20px) */
+    }
+  
+    .text h2 {
+      font-size: 1.75rem;
+    }
+  }
+  
+/* ======= END OF GLOBAL TEXT STYLING ========= */
+
+
 #page-title /* change color later */
 
 /* Style the first letter of the first paragraph */
@@ -267,3 +305,55 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+/* FOOTER FORMATTING */
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Enlarge icon on hover */
+.footer-icon:hover {
+  transform: scale(1.2); /* increases size by 20% */
+}
+
+/* PROJECTS FORMATTING */
+/* Project Section - Default Layout (Mobile) */
+   .project-section {
+    display: flex;
+    flex-direction: column; /* stack content */
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Make videos/images responsive */
+  .project-section .media img,
+  .project-section .media video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Project Section - Tablet & Desktop Layout */
+  @media screen and (min-width: 600px) {
+    .project-section {
+      flex-direction: row; /* side-by-side layout */
+      align-items: flex-start;
+    }
+  
+    .project-section .media {
+      flex: 1;
+      margin-right: 20px; /* space between media and text */
+    }
+  
+    .project-section .text {
+      flex: 1;
+    }
+  }
+  
+
+
+
