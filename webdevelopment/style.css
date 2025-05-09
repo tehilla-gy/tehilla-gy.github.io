@@ -20,7 +20,7 @@
     width: 80%;
   }
 
-  /* --------- Base Styles: Mobile First --------- */
+/* --------- Base Styles: Mobile First --------- */
 .about-grid {
   display: flex;
   flex-direction: column;
@@ -39,10 +39,8 @@
   max-width: 250px;
   height: auto;
   border-radius: 10px;
-
 }
 
-/* Text styles inside about-content */
 .about-content {
   line-height: 1.6;
 }
@@ -75,3 +73,187 @@
     justify-content: flex-end;
   }
 }
+
+/* REFLECTION PAGE */
+/* ========== MOBILE (0–600px) ========== */
+@media screen and (max-width: 600px) {
+  .reflection-box {
+    padding: 10px;
+  }
+
+  .reflection-box p,
+  .reflection-box li,
+  .reflection-box blockquote {
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .reflection-box h1 {
+    font-size: 1.6em;
+  }
+
+  .reflection-box h2 {
+    font-size: 1.4em;
+  }
+
+  .reflection-box h3 {
+    font-size: 1.2em;
+  }
+
+  .reflection-box img,
+  .reflection-box video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .reflection-box blockquote {
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ccc;
+  }
+
+  .reflection-box footer {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+}
+
+/* ========== TABLET (601px–899px) ========== */
+@media screen and (min-width: 601px) and (max-width: 899px) {
+  .reflection-box {
+    padding: 20px;
+  }
+
+  .reflection-box p,
+  .reflection-box li,
+  .reflection-box blockquote {
+    font-size: 1.1em;
+    line-height: 1.75;
+  }
+
+  .reflection-box h1 {
+    font-size: 2em;
+  }
+
+  .reflection-box h2 {
+    font-size: 1.6em;
+  }
+
+  .reflection-box h3 {
+    font-size: 1.4em;
+  }
+
+  .reflection-box img,
+  .reflection-box video {
+    max-width: 95%;
+  }
+
+  .reflection-box footer {
+    font-size: 1em;
+  }
+}
+
+/* ========== DESKTOP (900px and up) ========== */
+@media screen and (min-width: 900px) {
+  .reflection-box {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .reflection-box p,
+  .reflection-box li,
+  .reflection-box blockquote {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+
+  .reflection-box h1 {
+    font-size: 2.2em;
+  }
+
+  .reflection-box h2 {
+    font-size: 1.8em;
+  }
+
+  .reflection-box h3 {
+    font-size: 1.6em;
+  }
+
+  .reflection-box img,
+  .reflection-box video {
+    max-width: 90%;
+  }
+
+  .reflection-box footer {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
+
+/* FONT */
+h1 {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+/* PRINT STYLES for About */
+@media print {
+  @page {
+    margin: 1in;
+  }
+
+  /* Set all fonts to black and serif */
+  body, p, li, blockquote, footer {
+    color: black;
+    font-family: Georgia, serif;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  /* Keep custom font for h1 only */
+  .about-grid h1 {
+    font-family: 'IBM Plex Serif', serif;
+    color: black;
+    font-size: 14pt;
+    margin-bottom: 10px;
+  }
+
+  .about-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-content p,
+  .about-content ul,
+  .about-content blockquote {
+    margin-bottom: 8px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  blockquote {
+    font-style: italic;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    margin-left: 0;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 9pt;
+    margin-top: 10px;
+  }
+
+  /* Hide elements not needed in print */
+  nav, header, video, img, .mobile-menu-icon {
+    display: none;
+  }
+}
+
+/* END OF PRINT */  

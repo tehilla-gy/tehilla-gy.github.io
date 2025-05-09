@@ -44,3 +44,36 @@ nav ul {
     display: block;
   }
   
+  /* Hide hamburger icon by default */
+.mobile-menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Mobile Navigation Media Query */
+@media screen and (max-width: 600px) {
+  /* Hide nav list by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  /* Hide dropdown list on mobile */
+  .dropdown {
+    display: none;
+  }
+}

@@ -18,6 +18,7 @@ Tested:  Apr 25, 2025; Passed on Safari and Chrome browsers.
 
 -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Page</title>
 
         <link rel="stylesheet" href="style.css">
@@ -28,14 +29,16 @@ Tested:  Apr 25, 2025; Passed on Safari and Chrome browsers.
 <body>
     
 <nav>
-    <ul>
+    <span class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</span>
+
+    <ul id="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="project.html">Projects</a>
             <ul>
-                <li><a href="#">link 1</a></li>
-                <li><a href="#">link 2</a></li>
-                <li><a href="#">link 3</a></li>
+                <li><a href="project.html">Internships</a></li>
+                <li><a href="project.html">Community Service</a></li>
+                <li><a href="project.html">Projects</a></li>
             </ul>
         </li>
         <li><a href="reflection.html">Reflection</a></li>
@@ -43,9 +46,13 @@ Tested:  Apr 25, 2025; Passed on Safari and Chrome browsers.
     </ul>
 </nav>
 
-<header>
+
     <h1 id="page-title">Home Page</h1>
-</header>
+
+
+<!--Insert civil image here-->
+
+<img src="civil-image.jpg" style="display: block; margin: 0 auto; width: 100%; height: auto;">
 
 <main>
     <h3>Welcome!</h3>
@@ -60,5 +67,15 @@ Tested:  Apr 25, 2025; Passed on Safari and Chrome browsers.
 
 
 <footer>&copy;2025 Tehilla Gani-Yesufu | togmfm@umsystem.edu</footer>   
+
+<!-- Mobile navigation toggle script -->
+<script>
+    function toggleMenu() {
+      const navList = document.getElementById("nav-list");
+      navList.classList.toggle("show");
+    }
+</script>
+
+
 </body>
 </html>
