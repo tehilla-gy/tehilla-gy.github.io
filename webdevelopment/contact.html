@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<!--
+
+Title: Web Template
+
+Use: Refernce for other web pages
+
+Author: Tehilla Gani-Yesufu
+
+School/Term: Mizzou Spring 2025
+
+Developed: Mar 25, 2025
+
+Tested:  Mar 25, 2025; Passed on Safari and Chrome browsers.
+
+-->
+
+            
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact</title>
+         
+<!-- IBM Plex Serif from Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+        
+</head>
+<body>
+
+
+<nav>
+    <span class="mobile-menu-icon" onclick="toggleMenu()">&#9776;</span>
+
+    <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a>
+            <ul>
+                <li><a href="project.html#internship">Internships</a></li>
+                <li><a href="project.html#work-exp">Work Experience</a></li>
+                <li><a href="project.html#volunteer">Volunteer</a></li>
+            </ul>
+        </li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Contact Me</h1>
+</header>
+
+<main>
+
+    <section id="contact">
+        
+        <form action="mailto:togmfm@umsystem.edu?subject=Portfolio/Professional Website Contact" method="post" enctype="text/plain">
+          
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required autofocus>
+      
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+      
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      
+
+</main>
+
+<footer>
+    <p>
+        
+    &copy;2025 Tehilla Gani-Yesufu |
+    <img src="phone-icon.png" alt="Phone Icon" class="footer-icon"> 1+888-888-8888 |
+  
+    <img src="email-icon.png" alt="Email Icon" class="footer-icon">
+    <a href="mailto:togmfm@umsystem.edu">togmfm@umsystem.edu</a>
+
+    </p>
+</footer>   
+
+<!-- Mobile navigation toggle script -->
+<script>
+    function toggleMenu() {
+      const navList = document.getElementById("nav-list");
+      navList.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
+
