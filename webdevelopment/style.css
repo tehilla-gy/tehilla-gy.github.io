@@ -61,6 +61,12 @@ body {
     background-color: #f9f9f9;
     width: 80%;
   }
+.about-grid {
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #f9f9f9;
+  width: 80%;
+}
 
 /* --------- Base Styles: Mobile First --------- */
 .about-grid {
@@ -346,11 +352,14 @@ footer {
     .project-section {
       flex-direction: row; /* side-by-side layout */
       align-items: flex-start;
+      align-items: stretch; /* ensures both columns are equal height */
     }
   
     .project-section .media {
       flex: 1;
       margin-right: 20px; /* space between media and text */
+      align-items: center; /* vertical centering */
+      justify-content: center; /* optional: horizontal centering too */
     }
   
     .project-section .text {

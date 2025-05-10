@@ -1,9 +1,11 @@
 /* Make nav horizontal */
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0 auto;         /* center the nav container */
+  padding: 0;
+  display: flex;
+  justify-content: center;  /* center items inside */
+  background-color: #fcd9dd;
   }
   
   /* Style top-level nav items */
@@ -18,16 +20,24 @@ nav ul {
     padding: 10px;
     margin: 10px;
     color: green;
+    font-weight: bold;
+    font-size: large;
     background-color: #fcd9dd;
     text-decoration: none;
   }
+
+  nav ul li a:hover {
+    background-color: #fcb3c3;  /* a darker pink for hover */
+    color: #2d4739;             /* soft green text on hover */
+  }
+  
   
   /* dropdown menu */
   nav li ul {
     position: absolute;
     top: 100%;  /* dropdown shows below parent */
     left: 0;
-    background-color: plum;
+  
     list-style: none;
     padding: 0;
     margin: 0;
